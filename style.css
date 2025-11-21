@@ -167,11 +167,11 @@ hr {
 }
 
 /* Desktop View (Side by Side) */
-/* @media (min-width: 768px) {
+@media (min-width: 768px) {
     .container {
         flex-direction: row;
         min-height: 100vh;
-    } */
+    }
     
     .sidebar {
         width: 300px;
@@ -237,7 +237,7 @@ a.highlight-link:hover {
 }
 
 /* Responsive: On mobile phones, stack them vertically */
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     .news-item {
         flex-direction: column;
     }
@@ -245,4 +245,4 @@ a.highlight-link:hover {
         margin-bottom: 4px;
         color: #222;
     }
-}
+} */
