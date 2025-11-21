@@ -1,11 +1,9 @@
 /* --- GLOBAL STYLES --- */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: sans-serif;
   line-height: 1.6;
   margin: 0;
   padding-top: 50px; /* Space for the fixed nav bar */
-  color: #333;
-  background-color: #fff;
 }
 
 .container {
@@ -29,8 +27,6 @@ h2 {
   border-bottom: 2px solid #ddd;
   padding-bottom: 5px;
   margin-top: 0;
-  font-size: 1.5em;
-  font-weight: 500;
 }
 
 ul {
@@ -40,14 +36,9 @@ ul {
 
 li {
   margin-bottom: 15px;
-  font-size: 1.05em;
 }
 
-li strong {
-    color: #007bff; /* Highlight main title/date in list items */
-}
-
-/* --- NAVIGATION STYLES (Fixed to the top right) --- */
+/* --- NAVIGATION STYLES (Kept visible but minimal, as seen on the target site) --- */
 header {
   background-color: #f8f8f8;
   border-bottom: 1px solid #eee;
@@ -56,10 +47,7 @@ header {
   left: 0;
   right: 0;
   z-index: 100;
-}
-
-header nav {
-    text-align: right; /* Align links to the right */
+  text-align: right; /* Align links to the right */
 }
 
 header nav a {
@@ -74,7 +62,7 @@ header nav a:hover {
   color: #007bff;
 }
 
-/* --- PROFILE BLOCK STYLES (HOME SECTION) --- */
+/* --- PROFILE BLOCK STYLES (To match dadelani.github.io) --- */
 #home {
   padding-top: 80px; /* Give space below the fixed header */
   text-align: center; /* Center everything inside the home section */
@@ -85,17 +73,15 @@ header nav a:hover {
     display: flex;
     flex-direction: column;
     align-items: center; /* Centers items horizontally */
-    max-width: 700px;
-    margin: 0 auto;
 }
 
 .profile-image-container {
     flex-shrink: 0;
-    width: 150px; /* Profile image size */
+    width: 150px; /* Reduced size for a cleaner look */
     height: 150px;
     overflow: hidden;
     border-radius: 50%; /* Circular image */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow for emphasis */
     margin-bottom: 20px;
 }
 
@@ -107,15 +93,14 @@ header nav a:hover {
 
 /* Title and Subtitle Styling */
 #home h1 {
-  font-size: 2.8em;
+  font-size: 2.5em;
   margin-top: 0;
   margin-bottom: 5px;
-  font-weight: 700;
 }
 
 #home .subtitle {
   color: #555;
-  font-size: 1.2em;
+  font-size: 1.1em;
   margin-bottom: 25px;
 }
 
@@ -124,14 +109,13 @@ header nav a:hover {
   margin: 0 10px;
   text-decoration: none;
   color: #007bff; /* Primary link color */
-  font-weight: 500;
-  white-space: nowrap;
+  font-weight: bold;
+  white-space: nowrap; /* Keep links on one line */
   display: inline-block;
-  font-size: 0.95em;
 }
 
 .social-links-top a:hover {
-  color: #0056b3;
+  text-decoration: underline;
 }
 
 .section-divider {
@@ -142,12 +126,6 @@ header nav a:hover {
     margin: 40px 0; /* Space above and below the line */
 }
 
-/* About Me Text */
-.welcome-text {
-    text-align: left; /* Make the 'About Me' block text align left */
-    width: 100%;
-}
-
 /* --- FOOTER STYLES --- */
 footer {
   text-align: center;
@@ -155,4 +133,8 @@ footer {
   color: #777;
   font-size: 0.9em;
   border-top: 1px solid #eee;
+}
+
+footer h2 {
+    border-bottom: none;
 }
