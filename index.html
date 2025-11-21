@@ -1,44 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Adding FontAwesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
 <body>
-  <header>
-    <div class="container">
-      <nav>
-        <a href="#home">Home</a>
-        <a href="#updates">Updates</a>
-        <a href="#research">Research</a>
-        <a href="#teaching">Teaching & Talks</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
 
-  <section id="home" class="container">
-    <div class="centered-profile-block">
+<div class="container">
+    
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
+        <div class="profile-container">
+            <!-- Ensure your photo is named 'profile.jpg' or update this line -->
+            <img src="profile.jpg" alt="Profile Photo" class="profile-img">
+        </div>
+        
+        <div class="bio-text">
+            <h1>[Your Name]</h1>
+            <p class="title">Data Analyst & Researcher</p> <!-- Change to your title -->
+            <p class="location"><i class="fas fa-map-marker-alt"></i> City, Country</p>
+            
+            <div class="social-links">
+                <a href="mailto:youremail@example.com"><i class="fas fa-envelope"></i> Email</a>
+                <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="#"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+            
+            <a href="path-to-your-cv.pdf" class="btn-download">Download CV</a>
+        </div>
+    </aside>
 
-      <div class="profile-image-container">
-        <img src="profile.jpg" alt="Asantewaa Bremang Profile Picture" class="profile-picture">
-      </div>
+    <!-- MAIN CONTENT -->
+    <main class="content">
+        
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Hello! I am a passionate professional dedicated to [mention your field, e.g., solving complex data problems]. 
+                With a background in [Your Major/Field], I enjoy working on projects that make a real-world impact.
+            </p>
+            <p>
+                My research interests include [Interest 1], [Interest 2], and [Interest 3]. 
+                I am currently looking for opportunities in [Target Industry].
+            </p>
+        </section>
 
-      <h1>Asantewaa Bremang</h1>
-      <p class="subtitle">
-        Researcher in AI for Education · Deep Learning · Low-Resource Languages
-      </p>
+        <hr>
 
-      <div class="social-links-top">
-        <a href="mailto:asantewaa@example.com" target="_blank">📧 Email</a>
-        <a href="https://github.com/asantewaabremang" target="_blank">🔗 GitHub</a>
-        <a href="#" target="_blank">🔗 LinkedIn</a>
-        <a href="#" target="_blank">🔗 Google Scholar</a>
-      </div>
+        <section id="education">
+            <h2>Education</h2>
+            
+            <div class="resume-item">
+                <h3>Master of Science in [Field]</h3>
+                <p class="date">2021 - 2023</p>
+                <p class="institution">University Name</p>
+            </div>
 
-      <hr class="section-divider">
+            <div class="resume-item">
+                <h3>Bachelor of Science in [Field]</h3>
+                <p class="date">2017 - 2021</p>
+                <p class="institution">University Name</p>
+            </div>
+        </section>
 
-      <div class="welcome-text">
-        <h2>About Me</h2>
-        <p>
-          I am a researcher passionate about developing adaptable AI-powered educational tools for inclusive learning across Africa. 
-          My work focuses on speech recognition, low-resource languages, and technology for accessible education.
-        </p>
-      </div>
+        <hr>
 
-    </div>
-  </section>
+        <section id="experience">
+            <h2>Work Experience</h2>
+            
+            <div class="resume-item">
+                <h3>Job Title</h3>
+                <p class="date">Jan 2023 - Present</p>
+                <p class="company">Company Name, Location</p>
+                <ul>
+                    <li>Led a team of 5 to develop a new marketing strategy.</li>
+                    <li>Analyzed data sets using Python and SQL to improve efficiency by 20%.</li>
+                    <li>Collaborated with stakeholders to define project scope.</li>
+                </ul>
+            </div>
+
+            <div class="resume-item">
+                <h3>Intern</h3>
+                <p class="date">Jun 2022 - Dec 2022</p>
+                <p class="company">Company Name, Location</p>
+                <ul>
+                    <li>Assisted senior managers with daily operations.</li>
+                    <li>Prepared weekly reports and presentations for client meetings.</li>
+                </ul>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <span class="tag">Python</span>
+                <span class="tag">Data Analysis</span>
+                <span class="tag">Project Management</span>
+                <span class="tag">Public Speaking</span>
+                <span class="tag">HTML/CSS</span>
+                <span class="tag">Research</span>
+            </div>
+        </section>
+
+    </main>
+</div>
+
+</body>
+</html>
